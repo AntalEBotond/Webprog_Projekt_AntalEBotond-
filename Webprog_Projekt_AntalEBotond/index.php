@@ -298,7 +298,6 @@
     <body>
 
         <div class="container">
-            <!-- Profil név megjelenítése és kijelentkezés link -->
             <div class="profile">
                 <div class="profile-circle">
                     <?php if ($currentUser['profile_picture']): ?>
@@ -332,7 +331,6 @@
 
             <h2>Tranzakció hozzáadása</h2>
             <div class="form-container">
-                <!-- Kiadás form -->
                 <form method="POST">
                     <h3>Kiadás</h3>
                     <input type="number" name="amount" placeholder="Összeg" required>
@@ -341,7 +339,6 @@
                     <button type="submit">Kiadás hozzáadása</button>
                 </form>
 
-                <!-- Bevétel form -->
                 <form method="POST">
                     <h3>Bevétel</h3>
                     <input type="number" name="amount" placeholder="Összeg" required>
