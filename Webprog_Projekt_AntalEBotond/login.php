@@ -27,7 +27,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     <link rel="stylesheet" href="public/login.css">
 </head>
 <body>
-    <!-- Videó háttér -->
     <div class="background-video-container">
         <video autoplay muted loop id="background-video">
         <source src="/webprojekt/GradientLoopBackground.mp4" type="video/mp4">
@@ -35,7 +34,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         </video>
     </div>
 
-    <!-- Bejelentkezési forma -->
     <div class="form-container">
         <h1>Bejelentkezés</h1>
         <form method="POST" action="">
