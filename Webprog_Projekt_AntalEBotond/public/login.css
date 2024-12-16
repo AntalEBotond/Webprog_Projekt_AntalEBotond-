@@ -1,4 +1,3 @@
-/* Videó háttér */
 .background-video-container {
     position: fixed;
     top: 0;
@@ -6,16 +5,15 @@
     width: 100%;
     height: 100%;
     overflow: hidden;
-    z-index: -1; /* A videó legyen hátul */
+    z-index: -1; 
 }
 
 #background-video {
     width: 100%;
     height: 100%;
-    object-fit: cover; /* A videó kitöltse a képernyőt, miközben megtartja az arányait */
+    object-fit: cover; 
 }
 
-/* Alap beállítások */
 * {
     margin: 0;
     padding: 0;
@@ -28,12 +26,12 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: transparent; /* Az alap háttér színét eltávolítjuk */
+    background-color: transparent; 
 }
 
-/* Bejelentkezési forma konténer */
+
 .form-container {
-    background: rgba(0, 0, 0, 0.5); /* Átlátszó háttér a formához */
+    background: rgba(0, 0, 0, 0.5);
     border-radius: 20px;
     padding: 40px;
     width: 100%;
@@ -44,7 +42,6 @@ body {
     animation: fadeIn 1s ease-out;
 }
 
-/* Animációk */
 @keyframes fadeIn {
     from {
         opacity: 0;
@@ -73,7 +70,6 @@ h1 {
     }
 }
 
-/* Input mezők */
 .input-group {
     margin-bottom: 20px;
     text-align: left;
@@ -124,7 +120,6 @@ h1 {
     transform: translateY(-25px);
 }
 
-/* Gomb */
 button {
     width: 100%;
     padding: 14px;
@@ -144,7 +139,6 @@ button:hover {
     transform: translateY(-5px);
 }
 
-/* Hibaüzenet */
 .message {
     color: #ff6f61;
     font-size: 14px;
@@ -152,7 +146,7 @@ button:hover {
     font-weight: 600;
 }
 
-/* Linkek */
+
 a {
     color: #ff9d00;
     text-decoration: none;
@@ -160,7 +154,7 @@ a {
     transition: color 0.3s ease;
 }
 .no-account-text {
-    color: #fff; /* Fehér szín */
+    color: #fff; 
     font-weight: 500;
 }
 
@@ -168,7 +162,6 @@ a:hover {
     color: #f05f57;
 }
 
-/* Reszponzivitás */
 @media (max-width: 768px) {
     .form-container {
         padding: 30px;
