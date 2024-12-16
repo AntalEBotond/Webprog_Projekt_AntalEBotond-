@@ -29,8 +29,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 <body>
     <div class="background-video-container">
         <video autoplay muted loop id="background-video">
-        <source src="/Webprog_Projekt_AntalEBotond/GradientLoopBackground.mp4" type="video/mp4">
-            Your browser does not support the video tag.
+<source src="GradientLoopBackground.mp4" type="video/mp4">
         </video>
     </div>
 
