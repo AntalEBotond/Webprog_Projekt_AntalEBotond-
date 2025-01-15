@@ -1,4 +1,4 @@
-    <?php
+<?php
     session_start();
     require_once 'classes/User.php';
     require_once 'classes/Transaction.php';
@@ -351,15 +351,19 @@
 
 
             <h2>Tranzakciók</h2>
-            <ul class="transaction-list">
-                <?php foreach ($transactions as $transaction): ?>
-                    <li>
-                        <strong><?= htmlspecialchars($transaction['amount']) ?> lej</strong> - <?= htmlspecialchars($transaction['description']) ?>
-                        <br>
-                        <em><?= htmlspecialchars($transaction['created_at']) ?></em>
-                    </li>
-                <?php endforeach; ?>
-            </ul>
+<ul class="transaction-list">
+    <?php foreach ($transactions as $transaction): ?>
+        <li>
+            <strong><?= htmlspecialchars($transaction['amount']) ?> lej</strong> - <?= htmlspecialchars($transaction['description']) ?>
+            <br>
+            <em><?= htmlspecialchars($transaction['created_at']) ?></em>
+            <strong>
+                <?= $transaction['amount'] > 0 ? ' BEVÉTEL' : ' KIADÁS' ?>
+            </strong>
+        </li>
+    <?php endforeach; ?>
+</ul>
+
 
             <?php if ($message): ?>
                 <p><?= htmlspecialchars($message) ?></p>
